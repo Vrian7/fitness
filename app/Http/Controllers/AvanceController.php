@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Avance;
 
-class AvanceCotroller extends Controller
+class AvanceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,7 +29,7 @@ class AvanceCotroller extends Controller
      */
     public function create()
     {
-        //
+        return view('avances.create');
     }
 
     /**

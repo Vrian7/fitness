@@ -5,7 +5,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">macronutriente</div>
-
                 <div class="card-body">
                     <form method="POST" action="{{ asset('macronutrientes/'.$macronutriente->id.'/edit') }}">
                         @csrf

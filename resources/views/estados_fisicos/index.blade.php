@@ -5,7 +5,7 @@
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">
-                    Listado de estado fisico
+                    Listado de Estados Fisicos
                     <a type="button" href="{{URL::route('estados_fisicos.create')}}" class="float-right btn btn-success">Crear estado fisico</a>
                 </div>
                     <table class="table table-hover table-dark">

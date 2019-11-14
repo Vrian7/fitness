@@ -12,7 +12,7 @@
 
                         <div class="form-group row">
                             <label for="nombre" class="col-md-4 col-form-label text-md-right">
-                                nooombre
+                                Nombre
                             </label>
                             <div class="col-md-6">
                                 <input id="nombre" value="{{ $actividad->nombre }}" type="text" class="form-control" name="nombre" required>

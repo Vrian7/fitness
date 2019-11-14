@@ -29,7 +29,7 @@ class LogroController extends Controller
      */
     public function create()
     {
-        //
+        return view('logros.create');
     }
 
     /**

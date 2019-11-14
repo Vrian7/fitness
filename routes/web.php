@@ -16,7 +16,9 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::get('por_aqui',function(){
+    return "volvi";
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('actividades','ActividadController');

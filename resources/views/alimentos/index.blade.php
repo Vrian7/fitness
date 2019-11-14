@@ -5,7 +5,7 @@
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">
-                    Listado de alimentos
+                    Listado de Alimentos
                     <a type="button" href="{{URL::route('alimentos.create')}}" class="float-right btn btn-success">Crear alimento</a>
                 </div>
                     <table class="table table-hover table-dark">

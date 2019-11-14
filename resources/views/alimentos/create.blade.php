@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Registrar Nueva Alimento</div>
+                <div class="card-header">Registrar Nuevo Alimento</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ asset('alimentos') }}">

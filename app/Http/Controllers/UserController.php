@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use App\User;
 
 class UserController extends Controller
@@ -29,7 +30,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('usuarios.create');
     }
 
     /**
@@ -40,7 +41,16 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $password = Hash::make($request->password);
+        $usuario = new User();
+        $usuario->nombre = $request->nombre;
+        $usuario->apellidos = $request->apellidos;
+        $usuario->fecha_nacimiento = $request->fecha_nacimiento;
+        $usuario->name = $request->name;
+        $usuario->email = $request->email;
+        $usuario->password = $password;
+        $usuario->save();
+        return  redirect('usuarios');
     }
 
     /**
@@ -51,7 +61,11 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $usuario = User::find($id)->first();
+        $data = [
+            'usuario' => $usuario
+        ];
+        return view('usuarios.show', $data);
     }
 
     /**

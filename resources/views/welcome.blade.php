@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Fitness</title>
+        <title>FITLABEL</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -50,10 +50,10 @@
 
             .links > a {
                 color: #636b6f;
-                padding: 0 25px;
+                padding: 0 30px;
                 font-size: 13px;
                 font-weight: 600;
-                letter-spacing: .1rem;
+                letter-spacing: .3rem;
                 text-decoration: none;
                 text-transform: uppercase;
             }
@@ -81,15 +81,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    FITNESS
+                    FITLABEL
                 </div>
 
                 <div class="links">
                     <a href="{{ asset('usuarios') }}">Usuario</a>
-                    <a href="{{ asset('estados_fisicos') }}">Mi Estado Fisico</a>
-                    <a href="{{ asset('actividades') }}">Nivel de Actividad</a>
                     <a href="{{ asset('alimentos') }}">Alimentos</a>
                     <a href="{{ asset('macronutrientes') }}">Macronutrientes</a>
+                    <a href="{{ asset('estados_fisicos') }}">Estado Fisico</a>
+                    <a href="{{ asset('actividades') }}">Niveles de Actividad</a>
                     <a href="{{ asset('recomendaciones') }}">Recomendaciones</a>
                     <a href="{{ asset('logros') }}">Logros y Metas</a>
                     <a href="{{ asset('avances') }}">Avance</a>

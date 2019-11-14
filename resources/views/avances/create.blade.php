@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Registrar Nueva Actividad</div>
+                <div class="card-header">Registrar Nuevo Avance</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ asset('actividades') }}">
@@ -12,7 +12,7 @@
 
                         <div class="form-group row">
                             <label for="nombre" class="col-md-4 col-form-label text-md-right">
-                                Nombre
+                                Peso inicial
                             </label>
                             <div class="col-md-6">
                                 <input id="nombre" type="text" class="form-control" name="nombre" required>
@@ -20,7 +20,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="factor" class="col-md-4 col-form-label text-md-right">
-                                Factor
+                                Peso Actual
                             </label>
                             <div class="col-md-6">
                                 <input id="factor" type="text" class="form-control" name="factor" required>
@@ -28,7 +28,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="descripcion" class="col-md-4 col-form-label text-md-right">
-                                Descripción
+                                Rstado B-M
                             </label>
                             <div class="col-md-6">
                                 <input id="descripcion" type="text" class="form-control" name="descripcion">
