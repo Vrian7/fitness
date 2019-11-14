@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Recomendacion;
+use App\Alimento;
 
 class RecomendacionController extends Controller
 {
@@ -29,7 +30,11 @@ class RecomendacionController extends Controller
      */
     public function create()
     {
-        //
+        $alimentos = Alimento::get();
+        $data = [
+            'alimentos' => $alimentos
+        ];
+        return view('recomendaciones.create', $data);
     }
 
     /**
@@ -40,7 +45,12 @@ class RecomendacionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $recomendacion = new Recomendacion();
+        $recomendacion->alimento_id = $request->alimento_id;
+        $recomendacion->calorias = $request->calorias;
+        $recomendacion->cantidad = $request->cantidad;
+        $recomendacion->save();
+        return redirect('recomendaciones');
     }
 
     /**
@@ -51,7 +61,11 @@ class RecomendacionController extends Controller
      */
     public function show($id)
     {
-        //
+        $recomendacion = Recomendacion::find($id);
+        $data = [
+            'recomendacion' => $recomendacion
+        ];
+        return view('recomendaciones.show', $data);
     }
 
     /**
@@ -62,7 +76,13 @@ class RecomendacionController extends Controller
      */
     public function edit($id)
     {
-        //
+        $recomendacion = Recomendacion::find($id);
+        $alimentos = Alimento::get();
+        $data = [
+            'recomendacion' => $recomendacion,
+            'alimentos' => $alimentos
+        ];
+        return view('recomendaciones.edit', $data);
     }
 
     /**
@@ -74,7 +94,12 @@ class RecomendacionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $recomendacion = Recomendacion::find($id);
+        $recomendacion->alimento_id = $request->alimento_id;
+        $recomendacion->calorias = $request->calorias;
+        $recomendacion->cantidad = $request->cantidad;
+        $recomendacion->save();
+        return redirect('recomendaciones');
     }
 
     /**

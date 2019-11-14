@@ -12,20 +12,22 @@
                     <thead>
                         <tr>
                         <th scope="col">N°</th>
-                        <th scope="col">Productos</th>
+                        <th scope="col">Producto</th>
                         <th scope="col">Calorias</th>
+                        <th scope="col">Catidad</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($recomendaciones as $recomendacion)
                             <tr>
                                 <th scope="row">{{ $recomendacion->id }}</th>
-                                <td>{{ $recomendacion->aliment_id }}</td>
+                                <td>{{ $recomendacion->alimento_id }}</td>
                                 <td>{{ $recomendacion->calorias }}</td>
+                                <td>{{ $recomendacion->cantidad }}</td>
                                 <td>
                                     <div class="btn-group mr-2" role="group">
-                                        <a type="button" href="{{asset('recomendaciones/'.$actividad->id)}}" class="btn btn-secondary">V</a>
-                                        <a type="button" href="{{asset('recomendaciones/'.$actividad->id.'/edit')}}" class="btn btn-secondary">E</a>
+                                        <a type="button" href="{{asset('recomendaciones/'.$recomendacion->id)}}" class="btn btn-secondary">V</a>
+                                        <a type="button" href="{{asset('recomendaciones/'.$recomendacion->id.'/edit')}}" class="btn btn-secondary">E</a>
                                         <a type="button" href="#" class="btn btn-secondary">X</a>
                                     </div>
                                 </td>

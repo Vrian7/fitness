@@ -16,6 +16,7 @@ class CreateRecomendacionesTable extends Migration
         Schema::create('recomendaciones', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('alimento_id');
+            $table->decimal('cantidad',13,2)->default(0);
             $table->decimal('calorias',13,2)->default(0);
             $table->timestamps();
         });
