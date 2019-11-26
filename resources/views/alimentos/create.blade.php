@@ -9,7 +9,14 @@
                 <div class="card-body">
                     <form method="POST" action="{{ asset('alimentos') }}">
                         @csrf
-
+                        <div class="form-group row">
+                            <label for="codigo" class="col-md-4 col-form-label text-md-right">
+                                Codigo
+                            </label>
+                            <div class="col-md-6">
+                                <input id="codigo" type="text" class="form-control" name="cantidad">
+                            </div>
+                        </div>
                         <div class="form-group row">
                             <label for="nombre" class="col-md-4 col-form-label text-md-right">
                                 Nombre
@@ -52,6 +59,22 @@
                             </label>
                             <div class="col-md-6">
                                 <input id="etiqueta" type="file" class="form-control" name="etiqueta">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cantidad" class="col-md-4 col-form-label text-md-right">
+                                Cantidad
+                            </label>
+                            <div class="col-md-6">
+                                <input id="cantidad" type="text" class="form-control" name="cantidad">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="calorias" class="col-md-4 col-form-label text-md-right">
+                                Calorias
+                            </label>
+                            <div class="col-md-6">
+                                <input id="calorias" type="text" class="form-control" name="calorias">
                             </div>
                         </div>
                         <div class="form-group row mb-0">

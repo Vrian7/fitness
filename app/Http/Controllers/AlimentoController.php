@@ -51,6 +51,8 @@ class AlimentoController extends Controller
         $alimento->descripcion = $request->descripcion;
         $alimento->etiqueta = $request->etiqueta;
         $alimento->macronutriente_id = $request->macronutriente_id;
+        $alimento->cantidad = $request->cantidad;
+        $alimento->calorias = $request->calorias;
         $alimento->save();
         $data = [
             'alimento' => $alimento
@@ -105,6 +107,8 @@ class AlimentoController extends Controller
         $alimento->descripcion = $request->descripcion;
         $alimento->etiqueta = $request->etiqueta;
         $alimento->macronutriente_id = $request->macronutriente_id;
+        $alimento->cantidad = $request->cantidad;
+        $alimento->calorias = $request->calorias;
         $alimento->save();
         $data = [
             'alimento' => $alimento
