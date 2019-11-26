@@ -14,7 +14,7 @@ class MacronutrienteSeeder extends Seeder
         $macronutrientes = [
             [
                 'nombre' => 'lacteos',
-                'peso neto' => 10.00,
+                'peso' => 10.00,
                 'calorias' => 10.00,
                 'proteinas' => 12.00,
                 'carbohidratos' => 10.00,
@@ -22,7 +22,7 @@ class MacronutrienteSeeder extends Seeder
             ],
             [
                 'nombre' => 'azucares',
-                'peso neto' => 10.00,
+                'peso' => 10.00,
                 'calorias' => 30.00,
                 'proteinas' => 9.00,
                 'carbohidratos' => 18.00,
@@ -30,7 +30,7 @@ class MacronutrienteSeeder extends Seeder
             ],
             [
                 'nombre' => 'harinas',
-                'peso neto' => 10.00,
+                'peso' => 10.00,
                 'calorias' => 20.00,
                 'proteinas' => 20.00,
                 'carbohidratos' => 15.00,
